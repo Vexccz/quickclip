@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.titlebar-drag {
+  -webkit-app-region: drag;
+}
+.no-drag {
+  -webkit-app-region: no-drag;
+}
+
+/* scrollbars */
+.qc-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.qc-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.qc-scroll::-webkit-scrollbar-thumb {
+  background: #1f2a3a;
+  border-radius: 8px;
+}
+.qc-scroll::-webkit-scrollbar-thumb:hover {
+  background: #2a3a50;
+}
+
+.qc-gradient {
+  background: radial-gradient(ellipse at top, rgba(20, 184, 166, 0.08), transparent 60%),
+    #0b0f14;
+}
+
+.qc-card {
+  background: linear-gradient(180deg, rgba(22, 33, 49, 0.8), rgba(17, 24, 33, 0.8));
+  border: 1px solid #1f2a3a;
+}
+
+.qc-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.qc-chip-code   { color: #facc15; background: rgba(250, 204, 21, 0.1); }
+.qc-chip-url    { color: #22d3ee; background: rgba(34, 211, 238, 0.1); }
+.qc-chip-email  { color: #a78bfa; background: rgba(167, 139, 250, 0.1); }
+.qc-chip-phone  { color: #34d399; background: rgba(52, 211, 153, 0.1); }
+.qc-chip-image  { color: #f472b6; background: rgba(244, 114, 182, 0.12); }
+.qc-chip-text   { color: #94a3b8; background: rgba(148, 163, 184, 0.1); }
+.qc-chip-file   { color: #f59e0b; background: rgba(245, 158, 11, 0.12); }
+
+.qc-kbd {
+  font-family: 'JetBrains Mono', Consolas, monospace;
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: #162131;
+  border: 1px solid #1f2a3a;
+  color: #8b98a8;
+}
+
+.qc-row-active {
+  background: linear-gradient(90deg, rgba(20, 184, 166, 0.15), rgba(20, 184, 166, 0.03));
+  border-color: rgba(20, 184, 166, 0.4) !important;
+}
+
+.qc-logo-dot {
+  box-shadow: 0 0 10px rgba(20, 184, 166, 0.6);
+}
