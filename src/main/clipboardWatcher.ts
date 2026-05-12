@@ -77,8 +77,8 @@ export class ClipboardWatcher extends EventEmitter {
             this.lastFilesHash = '';
             this.lastTextHash = '';
             if (emit) {
-              // thumbnail for storage, original for OCR
-              const thumb = img.resize({ width: 320 });
+              // thumbnail for storage (larger for better preview), original for OCR
+              const thumb = img.resize({ width: 640 });
               const dataUrl = thumb.toDataURL();
               this.emit('change', {
                 type: 'image',
