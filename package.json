@@ -1,6 +1,6 @@
 {
   "name": "quickclip",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "QuickClip - Windows clipboard manager with OCR and link previews",
   "main": "dist-main/main/main.js",
   "author": "Vexccz",
